@@ -1,0 +1,41 @@
+body {
+    background-color: #FFF;
+    color: #000;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#books {
+    background-color: #CCC;
+    padding: 5px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+article {
+    background-color: #FFF;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: column;
+}
+article>button {
+    margin-top: auto;
+    align-self: center;
+}
+article>figure {
+    order: -1;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+article>h3 {
+    order: -2;
+    margin-top: 0;
+}
+article>p {
+    margin: 0 0 0.5em 0;
+}
+article:last-child {
+    order: -1;
+}
