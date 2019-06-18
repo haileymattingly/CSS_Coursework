@@ -1,0 +1,47 @@
+body {
+    background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#page {
+    background-color: #fff;
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+
+header {
+    background-color: #b58e41;
+    color: #ffffff;
+    height: 130px;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 15px;
+}
+
+#content {
+    padding-left: 9.375%;
+    padding-right: 9.375%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.5em;
+}
+
+#img {
+    width: 80%;
+}
+
+#img p {
+    font-style: italic;
+    font-size: .7rem;
+}
+footer {
+    background-color: #b58e41;
+    height: 25px;
+    font-size: .75rem;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Bitter', serif;*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*NAVIGATION*/
+
+#navbar ul {
+    margin: 0;
+    list-style-type: none;
+    background-color: #144437;
+}
+
+#navbar img {
+    float: left;
+    height: 2em;
+    padding: .5em 1em;
+}
+
+#navbar h1 {
+    font-family: 'Bitter', serif;
+    color: #F2E060;
+    float: left;
+    font-size: 2em;
+    line-height: .2em;
+}
+
+#navbar ul li {
+    display: inline-block;
+}
+
+#navbar ul li a {
+    float: left;
+    text-decoration: none;
+    line-height: 2em;
+    padding: .2em 1.5em;
+    color: #F2E060;
+    background-color: #144437;
+}
+
+#navbar #menu_icon a i{
+    display: none;
+}
+
+/*HEADER IMG*/
+
+#header {
+    width: 100vw;
+}
+
+/*GRID*/
+
+#text {
+    grid-area: text;
+    padding: 2%;
+}
+
+#comfort {
+    grid-area: comfort;
+}
+
+#forever {
+    grid-area: forever;
+}
+
+#enrich {
+    grid-area: enrich;
+}
+
+#enhance {
+    grid-area: enhance;
+}
+
+#inspire {
+    grid-area: inspire;
+}
+
+#entice {
+    grid-area: entice;
+}
+
+#fascinate {
+    grid-area: fascinate;
+}
+
+#calm {
+    grid-area: calm;
+}
+
+#bouquet {
+    grid-area: bouquet;
+    justify-self: center;
+    align-self: end;
+    padding-bottom: 10%;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "text comfort forever enrich enhance ." 
+        "text inspire entice fascinate calm bouquet";
+    grid-gap: 1%;
+    padding: 2%;
+    justify-content: center;
+}
+
+#grid div {
+    justify-self: center;
+}
+
+#grid div img {
+    max-width: 200px;
+}
+
+/*FOOTER*/
+
+#footer p {
+    margin: 0;
+    color: #F2E060;
+    background-color: #144437;
+    font-size: .6em;
+    padding: 1em 3em;
+}
+
+#footer_nav {
+    display: none;
+}
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (min-device-width: 927px) and (max-device-width: 1384px) 
+{
+    #grid {    
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        "text comfort forever enrich" 
+        "text enhance inspire entice"
+        "text fascinate calm bouquet";
+    }
+}
+
+@media screen and (min-device-width: 723px) and (max-device-width: 926px) 
+{
+    #grid {    
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "text comfort forever" 
+        "text enrich enhance"
+        "inspire entice fascinate"
+        "calm . bouquet";
+    }
+}
+
+@media screen and (min-device-width: 465px) and (max-device-width: 722px) 
+{
+    #header {
+        display: none;
+    }
+    
+    #navbar ul li a {
+    display: none;
+    }
+    
+    #navbar #menu {
+        display: inline-block;
+        float: right;
+    }
+    
+    #grid {    
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        "text comfort" 
+        "text enrich"
+        "forever enhance" 
+        "calm inspire"
+        "entice fascinate"
+        ". bouquet";
+    }
+}
+
+@media screen and (max-device-width: 464px) 
+{
+    #header {
+        display: none;
+    }
+    
+    #navbar ul {
+        padding: 0 20px;
+    }
+    
+    #navbar ul li a {
+    display: none;
+    }
+    
+    #navbar i {
+        color: #F2E060;
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        font-size: 1.8em;
+    }
+    
+    #navbar img {
+    height: 1.5em;
+}
+    
+    #navbar h1 {
+    font-size: 1.5em;
+    padding-top: .2em;
+    }
+    
+    #grid {    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "text"
+        "comfort" 
+        "enrich"
+        "forever"
+        "enhance" 
+        "calm"
+        "inspire"
+        "entice"
+        "fascinate"
+        "bouquet";
+    }
+    
+    #footer_nav {
+        display: inline-block;
+    }
+    
+    #footer_nav ul {
+        margin: 0;
+        list-style-type: none;
+        background-color: #144437;
+    }
+
+
+    #footer_nav ul li {
+        display: inline-block;
+        padding: .5em 0;
+        width: 50%;
+    }
+
+    #footer_nav ul li i {
+        color: #F2E060;
+    }
+    
+    #footer_nav ul li a {
+        text-decoration: none;
+        line-height: 2em;
+        padding: .2em 1.5em;
+        color: #F2E060;
+        background-color: #144437;
+    }
+}

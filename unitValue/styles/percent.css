@@ -1,0 +1,47 @@
+body {
+    background-color: hsla(80,47%,48%,0.75);
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#page {
+    background-color: #ffffff;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background-color: #b58e41;
+    color: #ffffff;
+    height: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#content {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    line-height: 1.2rem;
+}
+
+#img {
+    width: 80%;
+}
+
+#img p {
+    font-style: italic;
+    font-size: 70%;
+}
+
+footer {
+    background-color: #b58e41;
+    height: 8%;
+    font-size: 75%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+}

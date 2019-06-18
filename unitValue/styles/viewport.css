@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(56%,65%,180%);
+    font-family: cursive, sans-serif;
+}
+
+#page {
+    background-color: #ffffff;
+    width: 80vw;
+    margin: auto;
+}
+
+header {
+    background-color: #b58e41;
+    color: #ffffff;
+    height: 10vw;
+    margin-top: 2vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top:2vh;
+    padding-bottom: 2vh;
+    line-height: 1.2rem;
+}
+
+#img {
+    width: 60vw;
+}
+
+#img p {
+    font-style: italic;
+    font-size: .7rem;
+}
+
+footer {
+    background-color: #b58e41;
+    font-size: 0.75rem;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    margin-bottom: 2vh;
+}

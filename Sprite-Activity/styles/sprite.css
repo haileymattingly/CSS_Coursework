@@ -1,0 +1,77 @@
+@import url('normalize.css');
+
+/* blue = #0b5fae  or rgb(11, 95, 174)
+   light blue = #d4f4dc   or rgb(212, 244, 220) */
+
+	body {
+			background-color: powderblue;
+		}
+	
+	#wrap {
+		width: 90%;
+		max-width: 960px;
+		margin: 5px auto;
+		background-color: #fff;
+		font-size: 100%
+	}
+
+	header {
+		background-color: #0b5fae;
+		height: 125px;
+			
+	}
+	
+	h1 {
+		color: #fff;
+		padding-top: 35px;
+		padding-left: 1.875rem;
+	
+	}
+
+.nav ul{
+    float: left;
+    list-style: none;
+    margin: 15px;
+    padding: 5px;
+    height: 2.3rem;
+    width: 220px;
+    
+}
+
+.nav ul a{
+    text-decoration: none;
+    display: block;
+    width: 170px;
+    color: #fff;
+    margin: 5px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+    background-image: url(../Image/Sprite.png);
+    background-repeat: no-repeat;
+}
+
+.nav a:hover, .nav a:active, .nav a:focus {
+    background-position: right;
+}
+
+	section {
+		float: right;
+		width: 65%;
+		padding-right: 1.875rem;
+		padding-top: 10px;
+		margin-left: .625rem;
+
+	}
+	
+	
+	footer {
+		clear: both;
+		background-color: #0b5fae;
+	}
+	
+	footer h5 {
+		color: #fff;
+		padding: 10px 1.875rem;
+	}

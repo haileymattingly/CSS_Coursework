@@ -1,0 +1,194 @@
+
+/*  Keyframes for the ball moving.  */
+
+@keyframes moveXright {
+  from { left: 0; } to { left: 680px; }
+}
+
+@keyframes moveYdown {
+  from { top: 0; } to { top: 480px; }
+}
+
+@keyframes moveXleft {
+  from { left: 680px; } to { left: 0px; }
+}
+
+@keyframes moveYup {
+  from { top: 480px; } to { top: 0px; }
+}
+
+/*  Put keyframes for the navigatin shadow here.----- */
+
+@keyframes glow {
+    from {
+        text-shadow: -5px -5px 11px rgba(200,0,0,0.5);
+    }
+    40% {
+        text-shadow: 5px -5px 11px rgba(200,0,0,0.5);
+        animation-timing-function: linear;
+    }
+    70% {
+        text-shadow: 5px 0 11px rgba(200,0,0,0.5);
+        animation-timing-function: ease-in;
+    }
+    to {
+        text-shadow: 5px 5px 11px rgba(200,0,0,0.5);
+    }
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+body {
+	background-color: yellow;
+	font-family: sans-serif
+}
+
+#page {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+nav {
+	height: 3rem;
+}
+
+nav ul {
+	padding-top: 1rem;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 3.5rem;
+	padding-right: 3rem;
+	
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: darkseagreen;
+	transition-property: letter-spacing;
+	transition-duration: 1s;
+}
+
+
+
+
+nav a:hover {
+	color: #d00;
+	letter-spacing: 1px;
+    animation: glow 2s ease-out forwards;
+}
+
+
+
+
+h2 {
+    transform-origin: top left;
+    transform: translate(-10px, 350px) rotate(-90deg);
+    margin-left: 1rem;
+	font-size: 4em;
+	color: #dd0000;
+}
+
+img#clown1 {
+	margin-top: -175px;
+	margin-left: 6rem;
+}
+
+#boxAnimate {
+	position: relative;
+	top: -800px;
+	left: 500px;
+	width: 700px;
+	height: 500px;
+	background-color: lightgoldenrodyellow;
+	box-shadow: inset 3px 3px 15px lightgray;
+	border: 2px solid lightgray;
+	overflow: hidden;
+}
+
+/*	  The balls  */
+
+/*	  Red  */
+#ball1 {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: #f00;
+	border-radius: 50%;
+	box-shadow: inset -5px -5px 5px rgba(10,0,0,.6), 15px 15px 2px rgba(10,0,0,.04);
+	position: absolute;
+	animation: moveXright 3s linear 0s infinite alternate, 
+		moveYdown 3.6s linear 0s infinite alternate;
+}
+
+/*	  Yellow  */
+#ball2 {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: #ffee58;
+	border-radius: 50%;
+	box-shadow: inset -5px -5px 5px rgba(10,0,0,.6), 15px 15px 2px rgba(10,0,0,.04);
+	position: absolute;
+    left: 480px;
+	animation: moveXleft 3.6s linear 0s infinite alternate, 
+		moveYdown 3s linear 0s infinite alternate;
+}
+
+/*	  Green  */
+#ball3 {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: #4caf50;
+	border-radius: 50%;
+	box-shadow: inset -5px -5px 5px rgba(10,0,0,.6), 15px 15px 2px rgba(10,0,0,.04);
+	position: absolute;
+    left: 680px;
+    top: 480px;
+	animation: moveXleft 3.2s linear 0s infinite alternate, 
+		moveYup 3.8s linear 0s infinite alternate;
+}
+
+/*	  Blue  */
+#ball4 {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-color: #3f51b5;
+	border-radius: 50%;
+	box-shadow: inset -5px -5px 5px rgba(10,0,0,.6), 15px 15px 2px rgba(10,0,0,.04);
+	position: absolute;
+    top: 480px;
+	animation: moveXright 3.4s linear 0s infinite alternate, 
+		moveYup 3s linear 0s infinite alternate;
+}
+
+/*  --------------------------------------   */
+
+#boxPic {
+	position: relative;
+    transform: translate(950px, -765px) rotate(-12deg) scale(1.02);
+	height: 350px;
+	width: 234px;
+	background-color: darkseagreen;
+}
+
+
+img#clown2 {
+	position: relative;
+	left: 60rem;
+	top: -1110px;
+/*	bottom: 30rem;*/
+	
+}
+
+footer {
+	position: relative;
+	width: 300px;
+	top: -1140px;
+	left: 10.5rem;
+	color: darkseagreen;
+}
