@@ -1,0 +1,102 @@
+@page {
+    margin: 1in;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+
+body {
+	font-family: 'Bitter', serif;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 18pt;
+}
+
+h2 {
+    font-family: 'Bitter', serif;
+    font-size: 14pt;
+}
+
+h3 {
+    font-size: 12pt;
+}
+
+nav img {
+    float: left;
+	margin-top: .4rem;
+	margin-left: 3rem;
+    margin-right: 2rem;
+}
+
+nav p {
+    font-size: 18pt;
+	font-family: 'Bitter', serif;
+}
+
+nav ul {
+    display: none;
+}
+
+header img {
+    display: none;
+}
+
+table {
+    page-break-before: always;
+}
+
+table, th, td {
+   border: 1px solid black;
+}
+
+tr {
+	height: 3rem;
+}
+
+th:nth-of-type(1n+2) {
+	text-align: right;
+}
+
+th {
+	border-bottom: 1px solid lightgray;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+th:first-of-type {
+	text-align: left;
+}
+
+td:first-of-type {
+	padding-left: 5px;
+}
+td:nth-of-type(1n+2) {
+	text-align: right;
+	width: 10rem;
+	padding-right: 5px;
+}
+thead {
+	border-bottom: 1px dashed lightgray;
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: beige;
+}
+
+tbody tr:last-of-type td {
+	border-bottom: 1px solid lightgray;
+}
+
+footer {
+	clear: both;
+	height: 30px;
+}
+
+footer p {
+    font-size: 10pt;
+	padding-top: .3rem;
+	padding-left: 3rem;
+}
+

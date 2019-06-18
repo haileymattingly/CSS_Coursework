@@ -1,0 +1,45 @@
+body {
+    background-color: #f8eee4;
+    font-family: sans-serif;
+}
+
+#page {
+    background-color: #ffffff;
+    width: 960px;
+    margin: auto;
+}
+
+header {
+    background-color: #b58e41;
+    color: #ffffff;
+    height: 130px;
+    padding-top: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#content {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 1.2rem;
+}
+
+#img {
+    width: 500px
+}
+
+#img p {
+    font-style: italic;
+    font-size: 12px;
+}
+
+footer {
+    background-color: #b58e41;
+    height: 25px;
+    font-size: 9px;
+    padding-top: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+}

@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+
+body {
+	font-family: 'Bitter', serif;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+nav {
+    margin-top: 0;
+	height: auto;
+	background-color: cadetblue;
+}
+
+nav img {
+	float: left;
+	margin-top: 1%;
+	margin-left: 3%;
+	
+}
+
+nav p {
+	display: inline-block; 
+	float: left;
+	font-family: 'Bitter', serif;
+	font-size: 1.5rem;
+	color: oldlace;
+    margin-top: 1.5%;
+    margin-bottom: 0;
+    margin-left: 1%;
+    margin-right: 2%;
+}
+
+nav ul {
+    margin: 0;
+    margin-left: 20%;
+    padding-bottom: 2%;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 12%;
+	padding-top: 1rem;
+}
+
+nav ul li:nth-of-type(2) {
+	width: 16%
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: beige;
+}
+
+nav ul li a:hover {
+	color: khaki;
+}
+
+header img {
+	width: 100%;
+}
+
+article {
+	float: left;
+	width: 50%;
+	border: 1px solid lightgray;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 1rem;
+	margin-left: 3%;
+	padding: 1rem;
+}
+
+h2 {
+	font-family: 'Bitter', serif;
+	color: saddlebrown
+}
+
+table {
+	width: 40%;
+	padding-left: 3%;
+    padding-right: 3%;
+	margin-top: 1rem;
+}
+
+tr {
+	height: 3rem;
+}
+
+th:nth-of-type(1n+2) {
+	text-align: right;
+}
+
+th {
+	border-bottom: 1px solid lightgray;
+	background-color: cadetblue;
+	color: beige;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+th:first-of-type {
+	text-align: left;
+}
+
+td:first-of-type {
+	padding-left: 5px;
+}
+td:nth-of-type(1n+2) {
+	text-align: right;
+	width: 10rem;
+	padding-right: 5px;
+}
+thead {
+	border-bottom: 1px dashed lightgray;
+}
+
+tbody tr:nth-of-type(even) {
+	background-color: beige;
+}
+
+tbody tr:last-of-type td {
+	border-bottom: 1px solid lightgray;
+}
+
+footer {
+	clear: both;
+	height: 30px;
+	background-color: cadetblue;
+	color: beige;
+}
+
+footer p {
+	padding-top: .3rem;
+	padding-left: 3rem;
+}
+
+@media screen and (min-width: 815px) and (max-width: 940px) {
+    nav ul li a {
+        font-size: 1rem;
+    }
+    article {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    table {
+        width: 60%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 814px) {
+    nav ul {
+        margin: 0;
+        padding-bottom: 2%;
+    }
+    nav ul li {
+        clear: both;
+        display: block;
+        width: 10%;
+        padding-top: 2%;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    nav ul li:nth-of-type(2) {
+	   width: 10%
+    }
+    article {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    table {
+        width: 60%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    header img {
+	   display: none;
+    }
+     nav ul {
+        margin: 0;
+        padding-bottom: 2%;
+    }
+    nav ul li {
+        clear: both;
+        display: block;
+        width: 10%;
+        padding-top: 2%;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    nav ul li:nth-of-type(2) {
+	   width: 10%
+    }
+    article {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    table {
+        width: 60%;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
